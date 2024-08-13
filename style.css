@@ -1,0 +1,521 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+height: 12% ;
+width: 100%;
+padding: 0 8%;
+background-color: #47648d90;
+position: r;
+
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.logo{
+    width: 150px;
+    height: 90px;
+    margin-top:0px;
+
+}
+.nav-link{
+padding: 28px 0;
+font-size: large;
+font-weight: bold;
+
+}
+
+.nav-link li{
+    display: inline-block;
+    margin: 0 15px ;
+}
+.nav-link li a{
+
+    text-decoration: none;
+    color: #edb5bf;
+    /*#EDB5BF*/
+    padding: 5 px 0;
+    position: relative;
+
+}
+
+.nav-link li a::after {
+    content: '';
+    background: #99CED3;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+
+}
+.nav-link li a:hover::after{
+
+    width: 100%;
+}
+
+.content{
+    
+    float: right;
+    
+    width: 70%;
+    max-width: 600px;
+    margin-top: 80px;
+    text-align: left;
+    margin-right: 80px;
+    padding-left: 50px;
+    padding-top: 50px;
+    background-color: #86b3d16a;
+    height: 500px;
+    box-sizing: border-box;
+
+    border: 2px ;
+    border-color: #EDB5BF;
+ 
+}
+.howWorks{
+    background-color: #99CED3;
+    width: 100%;
+    margin-top: 670px;
+    height: 100px;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+}
+.howWorksMain{
+    
+    height: 1000px;
+    background-color: white;
+
+}
+.reportButtonM{
+    background-color: #99CED3;
+    width: 450px;
+    height: 300px;
+    font-size: large; 
+    color: white;
+   border-color: white;
+   float: left;
+   margin-top: 30px;
+
+}
+.reportPromote{
+    background-color: #86B3D1;
+    width: 450px;
+    height: 300px;
+    font-size: large;
+    color: white;
+    border-color: white;
+    float: none;
+    margin-left: 90px;
+    margin-top: 30px;
+
+}
+.reportReunited{
+    background-color: #EDB5BF;
+    width: 450px;
+    height: 300px;
+    font-size: large;
+    color: white;
+    border-color: white;
+    float: right;
+  margin-top: 30px;
+}
+
+.content h1{
+
+ font-size: 50px;
+ font-weight: 60;
+ color: white;
+ font-style:normal;
+ opacity: 0;
+ animation: ani2 0.75s ease-out 1s forwards;
+
+}
+@keyframes ani2{
+    100%{
+        opacity: 1;
+    }
+}
+
+.content h2{
+    font-size: x-large;
+    
+    line-height: 200%;
+    color:  white;
+    text-size-adjust: 50px;
+
+   
+    
+}
+@keyframes ani1{
+    100%{
+        opacity: 1;
+    }
+}
+ .a1{
+    opacity: 0;
+    animation: ani1 0.5s ease-out 2.5s forwards;
+ }
+ .a2{
+    opacity: 0;
+    animation: ani1 0.5s ease-out 3.5s forwards; 
+ }
+ .a3{
+    opacity: 0;
+    animation: ani1 0.5s ease-out 4.5s forwards; 
+ }
+ .a4{
+    opacity: 0;
+    animation: ani1 0.5s ease-out 5.5s forwards; 
+ }
+
+ .video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+    z-index: -1;
+}
+
+@media(min-aspect-ratio:16/9)
+{
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9)
+{
+    .video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.footer-c{
+
+  
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #4D6D9A;
+    height: 260px;
+    padding-top: 40px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   
+    
+}
+.footer-c h3{
+    
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: #EDB5BF;
+}
+.main{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 170%;
+    color: #EDB5BF;
+   
+    
+
+}
+.copy{
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#47648d;
+    text-align: center;
+    line-height: 170%;
+    color: #EDB5BF;
+   
+
+}
+
+.social{
+    list-style: none ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0 ;
+}
+.social li{
+    margin: 0 10px ;
+
+}
+.social li a {
+    text-decoration: none;
+    font-size:x-large;
+    color: #EDB5BF
+    
+
+}
+.social li a:hover {
+    text-decoration: none;
+    font-size:x-large;
+    color: #99CED3;
+    
+
+}
+.buttonMain{
+    background-color: #99ced3;
+  
+    color: white;
+  
+    padding: 14px 20px;
+  
+    margin: 8px 0;
+  
+    border: none;
+  
+    cursor: pointer;
+  
+    width: 150px;
+  
+    opacity: 0.9;
+
+    font-size: large;
+  
+
+
+}
+
+
+
+
+
+/*----------------------------------------pass window--------------------------------------------------
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+* {box-sizing: border-box;}
+
+
+
+/* Full-width input fields */
+
+input[type=text], input[type=password] {
+
+    width: 100%;
+  
+    padding: 15px;
+  
+    margin: 5px 0 22px 0;
+  
+    display: inline-block;
+  
+    border: none;
+  
+    background: #f1f1f1;
+  
+  }
+  
+  
+  
+  /* Add a background color when the inputs get focus */
+  
+  input[type=text]:focus, input[type=password]:focus {
+  
+    background-color: #ddd;
+  
+    outline: none;
+  
+  }
+  
+  
+  
+  /* Set a style for all buttons */
+  
+.signupbtn {
+  
+    background-color: #4D6D9A;
+  
+    color: white;
+  
+    padding: 14px 20px;
+  
+    margin: 8px 0;
+  
+    border: none;
+  
+    cursor: pointer;
+  
+    width: 100%;
+  
+    opacity: 0.9;
+  
+  }
+  
+  
+ 
+  
+  
+  /* Extra styles for the cancel button */
+  
+  .cancelbtn {
+  
+    padding: 14px 20px;
+  
+    background-color: #EDB5BF;
+    color: white;
+  
+    padding: 14px 20px;
+  
+    margin: 8px 0;
+  
+    border: none;
+  
+    cursor: pointer;
+  
+    width: 100%;
+  
+    opacity: 0.9;
+  
+  
+  }
+  
+  
+  
+  /* Float cancel and signup buttons and add an equal width */
+  
+  .cancelbtn, .signupbtn {
+  
+    float: left;
+  
+    width: 50%;
+
+    
+  
+  }
+  
+  
+  
+  /* Add padding to container elements */
+  
+  .container {
+  
+    padding: 16px;
+  
+  }
+  
+  
+  
+ 
+  
+  
+  
+  /* Modal Content/Box */
+  
+  .modal-content {
+  
+    background-color: #fefefe;
+   /* #fefefe;*/
+  
+    margin: 5% auto 0% auto; /* 5% from the top, 15% from the bottom and centered */
+  
+    border: 1px solid #888;
+  
+    width: 80%; /* Could be more or less, depending on screen size */
+    margin-top: 60px;
+  
+  
+  }
+  
+  
+  
+  /* Style the horizontal ruler */
+  
+  hr {
+  
+    border: 1px solid #f1f1f1;
+  
+    margin-bottom: 25px;
+  
+  }
+  
+   
+  
+
+  
+  
+  
+  /* Clear floats */
+  
+  .clearfix::after {
+  
+    content: "";
+  
+    clear: both;
+  
+    display: table;
+  
+  }
+  
+  
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  
+  @media screen and (max-width: 300px) {
+  
+    .cancelbtn, .signupbtn {
+  
+       width: 100%;
+  
+    }
+  
+  }
+
+  /* ----------------------------Search window----------------------*/
+
+  .ButtonSearch{
+
+    width: 300px;
+    height: 40px;
+    margin-left: 400px;
+    background-color:  #EDB5BF;
+    color: white;
+    border: none;
+    
+   
+  }
+ 
+  
+  button:hover >.ButtonSearch
+
+  input[ type =radio ]{
+
+    width: 60px;
+    height: 20px;
+    accent-color: #EDB5BF;
+    border: none;
+  }
+  
